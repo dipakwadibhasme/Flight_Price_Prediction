@@ -8,7 +8,8 @@ st.set_page_config(page_title='Flight price precictin App')
 
 df = pd.read_csv('df1.csv') 
 
-with open('E:\Streamlit\Flight prediction\pipeline.pkl','rb') as file:
+# Load the trained model pipeline
+with open('pipeline.pkl','rb') as file:
     pipeline = pickle.load(file)
 
 st.header('Enter your Inputs :')
